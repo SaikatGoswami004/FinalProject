@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main-body{
+   /* background-color: aqua; */
+   background:linear-gradient(
+    to top,
+    rgb(46, 31, 173) 0%,rgb(52, 48, 160) 50%,
+    rgb(69, 93, 231) 50%,rgb(50, 71, 187) 100%
+);
+    height: 100vh;
+    margin-top: 0rem;
+    padding: 0;
+}
+.main{
+    margin: 0;
+   
+}
+.todo-container{
+    background-color: aliceblue;
+    height: fit-content;
+    width: 32rem;
+    margin: 0rem 26.5rem;
+    /* padding-top: 10rem; */
+    border-radius: 6px;
+    
+}
+.todo-text>p{
+    color: aliceblue;
+    margin: 0rem 5rem;
+    padding-bottom: 0.8rem ;
+    padding-top: 5rem;
+    padding-left: 35rem ;
+    padding-right: 36rem ;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.create-task{
+    border-bottom: 1px solid  rgb(221, 218, 210);
+    height: 2.5rem;
+    margin: 0;
+}
+::placeholder{
+    color:rgb(98, 115, 129);
+}
+.create-task>input{
+    width: 25.9rem;
+    height: 2rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0.25rem 1rem;
+    font-size: 0.9rem;
+    color: rgb(17, 15, 15);
+    
+}
+.add-button{
+    background-color: rgb(46, 31, 173) ;
+    border: none;
+    color: rgb(240, 240, 243);
+    height: 1.9rem;
+    width: 2rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+    cursor: pointer;
+    
+}
+.add-button:hover{
+    background-color:rgb(214, 138, 39);
+    color: black;
+}
+
+.task-count{
+    border-bottom: 1px solid rgb(221, 218, 210);
+    height: 2rem;
+    margin: 0;
+    display: flex;
+}
+.all-task{
+    background-color: rgb(0, 153, 255);
+    font-size: 0.8rem;
+    width: 5rem;
+    height: 1.1rem;
+    color: aliceblue;
+    margin: 0.5rem 0.4rem 0rem 1rem ;
+    /* padding-left: 5px; */
+    text-align: center;
+    border-radius: 3px;
+}
+.incomplete-task{
+    background-color: rgba(230, 32, 32, 0.849);
+    font-size: 0.8rem;
+    width: 6rem;
+    height: 1.1rem;
+    color: aliceblue;
+    margin: 0.5rem 0.4rem 0rem 0.2rem ;
+    /* padding-left: 5px; */
+    text-align: center;
+    border-radius: 3px;
+}
+.complete-task{
+    background-color: rgb(24, 199, 103);
+    font-size: 0.8rem;
+    width: 6rem;
+    height: 1.1rem;
+    color: aliceblue;
+    margin: 0.5rem 0.4rem 0rem 0.2rem ;
+    /* padding-left: 5px; */
+    text-align: center;
+    border-radius: 3px;
+}
+.task-list{
+    border-bottom: 1px solid rgb(221, 218, 210);
+
+    margin: 0rem;
+}.task{
+    border-bottom: 1px solid rgb(221, 218, 210);
+    height: 2.2rem;
+    padding-left:1rem ;
+    color:rgb(98, 115, 129);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.task-div{
+    margin-top: 0.5rem;
+}
+.tasklist{
+    /* margin-top: 0.3rem; */
+}
+.checkbox{
+    margin-top: 0.6rem;
+    margin-right: 0.5rem;
+}
+.task>div>span{
+    margin:0px 0px 0px 8px;
+   
+}
+
+.CheckIcon{
+    color: rgb(24, 199, 103);
+    /* font-size: 0.5rem; */
+    /* padding-top: 0.5rem; */
+}
+.deleteicon{
+    color: red;
+    /* height: 5px; */
+    padding-top: 0.3rem;
+    padding-right: 0.8rem;
+    /* font-size: 10rem; */
+    cursor: pointer;
+}
+.deleteicon:hover{
+    color: rgb(177, 9, 9);
+}
+
+.Editicon{
+    /* padding-left: 20rem; */
+    color:rgb(11, 133, 92);
+    cursor: pointer;
+}
+.Editicon:hover{
+    color: rgb(5, 88, 61);
+}
+.right-button{
+    color: green;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    margin-top: 0.5rem;
+}
+.clear-complete-task{
+    text-align: center;
+    height: 2.5rem;
+    font-size: 1rem;
+    padding-top: 0.9rem;
+    color:rgb(98, 115, 129);
+    
+}
+.clear-complete-task>span:hover{
+    color: rgb(214, 138, 39);
+    cursor: pointer;
+}

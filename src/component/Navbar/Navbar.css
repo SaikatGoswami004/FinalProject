@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    justify-content:left;
+    /* align-items: flex-end; */
+    background-color: aliceblue;
+    /* padding-top: 0.2rem; */
+    height: 3.5rem;
+
+}
+.logo{
+    margin: 0;
+    width: 6rem;
+    height: 1.5rem;
+    padding:0.9rem 1.5rem;
+    font-weight: bolder;
+}
+.logo:hover{
+    color: rgb(214, 138, 39);
+}
+.header-menu{
+    list-style: none;
+    display: flex;
+    gap:2rem;
+    color: black;
+}
+.header-menu>li{
+    cursor: pointer;
+}
+.header-menu>li:hover{
+    cursor: pointer;
+    color: rgb(214, 138, 39);
+}
+.nav-link{
+    color: black;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color:rgb(214, 138, 39);
+}
+.sign-in{
+    cursor: pointer;
+    margin-left: 47rem;
+    margin-top: 0.7rem;
+    height: 2rem;
+    width: 5rem;
+    background-color: rgb(204, 204, 236);
+    color:black;
+    border-radius: 5px;
+}
+.sign-in:hover{
+    background-color:rgb(214, 138, 39);
+}

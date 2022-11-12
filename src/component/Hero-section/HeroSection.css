@@ -1,0 +1,44 @@
+.main-div{
+    /* background-color: aqua; */
+    width: 85rem;
+}
+.hero-img{
+    margin: 0;
+    padding: 0;
+    background:url("../../../public/img/hero6.jpg") no-repeat ; 
+    background-size:cover;
+    /* background-color: antiquewhite; */
+    height: 35.5rem;
+    width: 85rem;
+}
+.greeting-text{
+
+    justify-content: center;
+    align-items: center;
+    /* padding: 15% 35%; */
+     /* width: 20rem;  */
+    /* height: 80px;  */
+    padding:15rem 0rem 0rem 25rem;
+
+}
+.greeting-text>p{
+    color: white;
+    font-size: 1.8rem;
+    width: 40rem;
+    height: 10rem;
+    font-weight:500;
+
+}
+.text1{
+    margin-left: 7.5rem;
+    /* padding-bottom: 2rem; */
+    font-size: 1.6rem;
+    
+
+}
+.text2{
+    margin-left: 3.5rem;
+    /* padding-top: 2rem; */
+
+
+}
