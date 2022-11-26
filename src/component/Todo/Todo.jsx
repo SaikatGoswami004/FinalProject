@@ -2,10 +2,19 @@ import React, { useEffect, useState } from "react";
 import "./Todo.css";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
+const getstoregeItem=()=>{
+  let lists=localStorage.getItem("list");
+  console.log(lists);
+  if(lists){
+    return JSON.parse(localStorage.getItem("list"));
+  }else{
+    return []
+  }
+}
 
 const Todo = () => {
   const [input, setInput] = useState();
-  const [todo, setTodo] = useState([]);
+  const [todo, setTodo] = useState(getstoregeItem());
   const [radioToggle, setRadioTaggle] = useState(true);
   const [editItem,setEditItem]=useState();
   const [editToggle,setEditToggle]=useState(true);
@@ -43,7 +52,7 @@ const Todo = () => {
       setInput("");
     }
 
-    console.log(todo);
+    // console.log(todo);
   };
 
   const completebtn = (id, complete) => {
@@ -69,7 +78,7 @@ const Todo = () => {
         return item.id !== id;
       });
       setTodo(dlt);
-      console.log(todo);
+      // console.log(todo);
     }
   };
 
@@ -86,13 +95,16 @@ const Todo = () => {
       const clear=todo.filter((item)=>{
         return item.complete!==true;
       })
-      console.log(clear);
+      // console.log(clear);
       setTodo(clear);
   }
   useEffect(()=>{
     setIncompleteTask(todo.filter((item)=>!item.complete).length);
     setCompleteTask(todo.filter((item)=>item.complete).length);
   })
+  useEffect(()=>{
+    localStorage.setItem("list",JSON.stringify(todo))
+  },[todo])
   const checktoggle=(id)=>{
     const check=todo.map((item)=>{
       if(item.id===id){
